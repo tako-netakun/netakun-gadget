@@ -1,0 +1,94 @@
+$blue: #0b50e4;
+$titlecolor: aquamarine;
+
+.title1{
+    color: $blue;
+    border: solid;
+    border-radius: 5px;
+    text-align: center;
+    background-color: $titlecolor;
+    padding: 15px 0;
+}
+
+.title2{
+    padding: 0;
+}
+
+.title3{
+    padding: 0;
+}
+
+* {
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
+body {
+    background: /*linear-gradient(#e66465, #9198e5)*/url(xp.jpg);
+}
+
+.kizi{
+    width: 65%;
+    padding: 5px;
+}
+
+.author{
+    width: 20%;
+    padding: 5px;
+}
+
+.genre {
+    text-align: center;
+
+}
+
+.yokonarabi {
+    display: flex;
+}
+
+.box {
+    height: 100%;
+}
+
+.nakami{
+    border: 3px;
+
+}
+
+
+footer {
+    padding-top: 10px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+.kizi {
+    border-right: $blue solid 2px;
+    border-left: $blue solid 2px;
+}
+
+.menyu{
+    width: 15%;
+    padding: 5px;
+    border-right: 3px;
+}
+
+.neta{
+    border: #000 solid 3px;
+    border-radius: 10px;
+    background-color: #e4dbb4;
+    margin: 5px;
+    padding: 5px;
+    h3 {
+        color: #e66465;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.neta img{
+    padding: 5px;
+    width: 76px;
+}

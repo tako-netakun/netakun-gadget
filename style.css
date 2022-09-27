@@ -1,17 +1,14 @@
 .title1 {
   color: #0b50e4;
   border: solid;
+  border-width: 2px;
   border-radius: 5px;
   text-align: center;
   background-color: aquamarine;
   padding: 15px 0;
 }
 
-.title2 {
-  padding: 0;
-}
-
-.title3 {
+.pd-0 {
   padding: 0;
 }
 
@@ -49,10 +46,12 @@ body {
   border: 3px;
 }
 
+.new {
+  color: red;
+  font-weight: boid;
+}
+
 footer {
-  padding-top: 10px;
-  position: absolute;
-  bottom: 0;
   text-align: center;
 }
 
@@ -75,7 +74,13 @@ footer {
   padding: 5px;
 }
 .neta h3 {
-  color: #e66465;
+  color: #f1000c;
+}
+.neta .articles {
+  display: flex;
+}
+.neta p {
+  color: #000;
 }
 
 .flex {
@@ -89,4 +94,23 @@ footer {
 
 .menu-content {
   display: none;
+  color: #0b50e4;
+  border: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: aquamarine;
+  padding: 15px 0;
+  border-top: 0;
+}
+
+.syoukai {
+  background-color: #e4dbb4;
+  border-radius: 15px;
+  border-color: #000;
+  margin: 3px;
+  padding: 2px;
+}
+.syoukai p {
+  color: #4000ff;
 }/*# sourceMappingURL=style.css.map */

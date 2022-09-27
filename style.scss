@@ -1,22 +1,24 @@
 $blue: #0b50e4;
 $titlecolor: aquamarine;
 
-.title1{
+@mixin baseBox($borderPx) {
     color: $blue;
     border: solid;
+    border-width: $borderPx;
     border-radius: 5px;
     text-align: center;
     background-color: $titlecolor;
     padding: 15px 0;
 }
 
-.title2{
+.title1{
+    @include baseBox(2px);
+}
+
+.pd-0{
     padding: 0;
 }
 
-.title3{
-    padding: 0;
-}
 
 * {
     font-family: 'Kosugi Maru', sans-serif;
@@ -54,11 +56,12 @@ body {
 
 }
 
+.new {
+    color: red;
+    font-weight: boid;
+}
 
 footer {
-    padding-top: 10px;
-    position: absolute;
-    bottom: 0;
     text-align: center;
 }
 
@@ -80,7 +83,13 @@ footer {
     margin: 5px;
     padding: 5px;
     h3 {
-        color: #e66465;
+        color: #f1000c;
+    }
+    .articles {
+        display: flex;
+    }
+    p{
+        color: #000;
     }
 }
 
@@ -95,4 +104,17 @@ footer {
 
 .menu-content {
     display: none;
+    @include baseBox(1px);
+    border-top: 0;
+}
+
+.syoukai{
+    background-color: #e4dbb4;
+    border-radius: 15px;
+    border-color: #000;
+    margin: 3px;
+    padding: 2px;
+    p{
+        color: #4000ff
+    }
 }

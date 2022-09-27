@@ -1,5 +1,5 @@
 $blue: #0b50e4;
-$titlecolor: aquamarine;
+$titlecolor: rgb(181, 239, 255);
 
 @mixin baseBox($borderPx) {
     color: $blue;
@@ -40,7 +40,7 @@ body {
 
 .genre {
     text-align: center;
-
+    font-size: 15px;
 }
 
 .yokonarabi {
@@ -77,6 +77,7 @@ footer {
 }
 
 .neta{
+    box-shadow: 2px 2px 2px;
     border: #000 solid 3px;
     border-radius: 10px;
     background-color: #e4dbb4;
@@ -109,6 +110,7 @@ footer {
 }
 
 .syoukai{
+    box-shadow: 2px 2px 2px;
     background-color: #e4dbb4;
     border-radius: 15px;
     border-color: #000;

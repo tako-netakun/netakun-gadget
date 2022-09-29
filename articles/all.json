@@ -3,5 +3,10 @@
         "id": "taiho1",
         "name": "ネタ君逮捕",
         "image": "intel.png"
+    },
+    {
+        "id": "taiho2",
+        "name": "ネタ君逮捕",
+        "image": "intel.png"
     }
 ]

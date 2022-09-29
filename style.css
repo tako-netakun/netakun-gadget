@@ -49,7 +49,8 @@ body {
 
 .new {
   color: red;
-  font-weight: boid;
+  font-weight: bold;
+  margin-left: 0.5rem;
 }
 
 footer {

@@ -35,7 +35,7 @@ fetch("articles/all.json")
         const el = document.createElement("div");
         const h3 = document.createElement("h3");
         h3.innerText = x.name;
-        if (i === 0) {
+        if (data.indexOf(x) === 0) {
             const news = document.createElement("span");
             news.innerText = "New!";
             news.classList.add("new");

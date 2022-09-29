@@ -51,6 +51,6 @@ fetch("articles/all.json")
         els.push(articles);
     });
     els.map(x => neta.appendChild(x));
-
+    articlesbox.appendChild(neta);
 
 })

@@ -21,12 +21,12 @@ menu.addEventListener("mouseleave", (e) => {
 const articlesbox = document.getElementById("articlesbox");
 fetch("articles/all.json")
 .then((x) => x.json())
-.then(data => {
+.then(async data => {
     const neta = document.createElement("div");
     neta.classList.add("neta");
     const d = data.reverse();
     const els = [];
-    d.map((x, i) => {
+    for (const x of data) {
         const articles = document.createElement("div");
         articles.classList.add("articles");
         const img = document.createElement("img");
@@ -41,15 +41,15 @@ fetch("articles/all.json")
             news.classList.add("new");
             h3.appendChild(news);
         }
-        const iframe = document.createElement("iframe");
-        iframe.frameBorder = 0;
-        iframe.src = `./articles/${x.id}.txt`;
+        const p = document.createElement("p");
+        const dd = await(await fetch(`./articles/${x.id}.txt`)).text();
+        p.innerText = dd;
         el.appendChild(h3);
-        el.appendChild(iframe);
+        el.appendChild(p);
         articles.appendChild(img);
         articles.appendChild(el);
         els.push(articles);
-    });
+    };
     els.map(x => neta.appendChild(x));
     articlesbox.appendChild(neta);
 

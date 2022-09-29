@@ -1,0 +1,123 @@
+$blue: #0b50e4;
+$titlecolor: rgb(181, 239, 255);
+
+@mixin baseBox($borderPx) {
+    color: $blue;
+    border: solid;
+    border-width: $borderPx;
+    border-radius: 5px;
+    text-align: center;
+    background-color: $titlecolor;
+    padding: 15px 0;
+}
+
+.title1{
+    @include baseBox(2px);
+}
+
+.pd-0{
+    padding: 0;
+}
+
+
+* {
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
+body {
+    background: /*linear-gradient(#e66465, #9198e5)*/url(xp.jpg);
+}
+
+.kizi{
+    width: 65%;
+    padding: 5px;
+}
+
+.author{
+    width: 20%;
+    padding: 5px;
+}
+
+.genre {
+    text-align: center;
+    font-size: 15px;
+}
+
+.yokonarabi {
+    display: flex;
+}
+
+.box {
+    height: 100%;
+}
+
+.nakami{
+    border: 3px;
+
+}
+
+.new {
+    color: red;
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+
+footer {
+    text-align: center;
+}
+
+.kizi {
+    border-right: $blue solid 2px;
+    border-left: $blue solid 2px;
+}
+
+.menyu{
+    width: 15%;
+    padding: 5px;
+    border-right: 3px;
+}
+
+.neta{
+    box-shadow: 2px 2px 2px;
+    border: #000 solid 3px;
+    border-radius: 10px;
+    background-color: #e4dbb4;
+    margin: 5px;
+    padding: 5px;
+    h3 {
+        color: #f1000c;
+    }
+    .articles {
+        display: flex;
+    }
+    p{
+        color: #000;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.neta img{
+    padding: 5px;
+    width: 76px;
+}
+
+.menu-content {
+    display: none;
+    @include baseBox(1px);
+    border-top: 0;
+}
+
+.syoukai{
+    box-shadow: 2px 2px 2px;
+    background-color: #e4dbb4;
+    border-radius: 15px;
+    border-color: #000;
+    margin: 3px;
+    padding: 5px;
+    p{
+        color: #4000ff
+    }
+}

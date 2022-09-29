@@ -3,7 +3,6 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ネタくんのガジェットサイト</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +15,11 @@
     <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">-->
     <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap&prompt=suzuneu" rel="stylesheet">
     <script src="gadget.js" defer></script>
+    <script>
+        if (screen.availWidth < 500) {
+            location.href = "m/index.html";
+        }
+    </script>
 </head>
 
 <body>
@@ -43,15 +47,15 @@
             <h2><a href="taihoreki.html">タブレット</a></h2>
         </div>
     </div>
-    <div class="kizi box">
+    <div class="kizi box" id="articlesbox">
         <div class="title1 pd-0">
             <h2>最新の記事</h2>
         </div>
-        <div class="neta">
+        <!--<div class="neta">
             <div class="articles">
                 <img src="intel.png" class="imgn">
                 <div>
-                    <h3><a href="kizi1.html">IntelRaptorLake</a><span class="new">New!</h3>
+                    <h3><a onclick="showKizi('raptorlake')">IntelRaptorLake</a><span class="new">New!</h3>
                     <p>intelとAmdの争いはどちらが勝利するのでしょうか！！</p>
                 </div>
             </div>
@@ -60,7 +64,7 @@
             <div class="articles">
                 <img src="intel.png" class="imgn">
                 <div>
-                    <h3>ネタ君逮捕</span></h3>
+                    <h3>ネタ君逮捕</h3>
                     <p>今日未明ネタ君は窃盗の疑いで逮捕されました</p>
                 </div>
             </div>
@@ -101,6 +105,7 @@
                 </div>
             </div>
         </div>
+    -->
     </div>
     <div class="author box">
         <div class="title1 pd-0">

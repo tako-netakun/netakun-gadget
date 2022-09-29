@@ -22,11 +22,11 @@ const articlesbox = document.getElementById("articlesbox");
 fetch("articles/all.json")
 .then((x) => x.json())
 .then(async data => {
-    const neta = document.createElement("div");
-    neta.classList.add("neta");
     const d = data.reverse();
     const els = [];
     for (const x of data) {
+        const neta = document.createElement("div");
+        neta.classList.add("neta");
         const articles = document.createElement("div");
         articles.classList.add("articles");
         const img = document.createElement("img");
@@ -48,9 +48,9 @@ fetch("articles/all.json")
         el.appendChild(p);
         articles.appendChild(img);
         articles.appendChild(el);
-        els.push(articles);
+        neta.appendChild(articles);
+        els.push(neta);
     };
-    els.map(x => neta.appendChild(x));
-    articlesbox.appendChild(neta);
+    els.map(x => articlesbox.appendChild(x));
 
 })

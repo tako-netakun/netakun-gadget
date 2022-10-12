@@ -1,27 +1,27 @@
 [
     {
         "id": "taiho1",
-        "name": "ネタ君逮捕",
+        "name": "Raptor Lake",
         "image": "intel.png"
     },
     {
         "id": "taiho2",
-        "name": "ネタ君逮捕",
+        "name": "Ryzen7000シリーズ発表！爆熱！",
         "image": "intel.png"
     },
     {
-        "id": "taiho3",
+        "id": "RTX4000シリーズ発表",
         "name":"ネタ君逮捕",
         "image":"intel.png"
     },
     {
         "id": "taiho4",
-        "name":"ネタ君逮捕",
+        "name":"待望のコスパ最強スマホ、Xiaomi12T Pro",
         "image":"intel.png"
     },
     {
         "id": "taiho5",
-        "name": "ネタ君逮捕",
+        "name": "Google Pixelがやばい！",
         "image":"intel.png"
     }
 ]

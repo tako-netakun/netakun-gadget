@@ -25,7 +25,7 @@ $(function(){
     });
     
     
-    var time = 9;
+    var time = 20;
     setInterval(function(){
     time--;
     if (time <= 0) window.location = "https://www.amazon.co.jp/dp/B007QAVY7U/ref=cm_sw_r_cp_ep_dp_HR5gBbDQYFETV"

@@ -2,7 +2,7 @@
     {
         "id": "taiho1",
         "name": "Raptor Lake",
-        "image": "intel.jpg"
+        "image": "intel.png"
     },
     {
         "id": "taiho2",
@@ -12,7 +12,7 @@
     {
         "id": "taiho3",
         "name":"RTX4000シリーズ発表",
-        "image":"nvidia.png"
+        "image":"nvidia.jpg"
     },
     {
         "id": "taiho4",
@@ -22,6 +22,6 @@
     {
         "id": "taiho5",
         "name": "Google Pixelがやばい！",
-        "image":"g2.png"
+        "image":"g2.jpg"
     }
 ]

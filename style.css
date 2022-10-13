@@ -10,9 +10,15 @@
 
 .pd-0 {
   padding: 0;
-  #menu li a:hover {
-	background-color:#000066; 	/*リンクにマウスが乗ったら背景色を変更する*/
+  background-color: #b1eeff;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.3s ease;
 }
+
+.pd-0:hover {
+    background-color #ffc9d7;
 }
 
 * {

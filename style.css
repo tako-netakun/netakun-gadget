@@ -1,7 +1,7 @@
 .title1 {
   color: #0b50e4;
   border: solid;
-  border-width: 2px;
+  border-width: 1px;
   border-radius: 5px;
   text-align: center;
   background-color: rgb(181, 239, 255);
@@ -77,7 +77,7 @@ footer {
   box-shadow: 2px 2px 2px;
   border: #000 solid 3px;
   border-radius: 10px;
-  background-color: #e4dbb4;
+  background-color: #ffdcfa;
   margin: 5px;
   padding: 5px;
 }

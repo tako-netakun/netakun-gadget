@@ -46,7 +46,7 @@ fetch("articles/all.json")
         let expanded = false;
         p.innerText = `${dd.match(/^.{1,20}/)[0]}${dd.length > 20 ? "...":""}`;
         const e = () => {
-            if (expanded) {
+            if (!expanded) {
                 p.innerText = dd;
                 expanded = true;
             } else {

@@ -44,13 +44,13 @@ fetch("articles/all.json")
         const p = document.createElement("p");
         const dd = await(await fetch(`./articles/${x.id}.txt`)).text();
         let expanded = false;
-        p.innerText = `${dd.match(/.^{1,10}/)[0]}${dd.length > 10 ? "...":""}`;
+        p.innerText = `${dd.match(/^.{1,20}/)[0]}${dd.length > 10 ? "...":""}`;
         articles.onclick = () => {
             if (expanded) {
                 p.innerText = dd;
                 expanded = true;
             } else {
-                p.innerText = `${dd.match(/.^{1,10}/)[0]}${dd.length > 10 ? "...":""}`;
+                p.innerText = `${dd.match(/^.{1,20}/)[0]}${dd.length > 10 ? "...":""}`;
                 expanded = false;
             }
         }

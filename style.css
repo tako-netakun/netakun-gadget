@@ -86,6 +86,7 @@ footer {
 }
 .neta .articles {
   display: flex;
+  cursor: pointer;
 }
 .neta p {
   color: #000;

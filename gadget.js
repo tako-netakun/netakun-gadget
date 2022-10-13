@@ -45,7 +45,7 @@ fetch("articles/all.json")
         const dd = await(await fetch(`./articles/${x.id}.txt`)).text();
         let expanded = false;
         p.innerText = `${dd.match(/^.{1,20}/)[0]}${dd.length > 10 ? "...":""}`;
-        articles.onclick = () => {
+        const e = () => {
             if (expanded) {
                 p.innerText = dd;
                 expanded = true;
@@ -54,6 +54,7 @@ fetch("articles/all.json")
                 expanded = false;
             }
         }
+        articles.addEventListener("click", e);
         el.appendChild(h3);
         el.appendChild(p);
         articles.appendChild(img);

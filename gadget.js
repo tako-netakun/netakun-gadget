@@ -43,7 +43,17 @@ fetch("articles/all.json")
         }
         const p = document.createElement("p");
         const dd = await(await fetch(`./articles/${x.id}.txt`)).text();
-        p.innerText = dd;
+        let expanded = false;
+        p.innerText = `${dd.match(/.^{1,10}/)[0]}${dd.length > 10 ? "...":""}`;
+        articles.onclick = () => {
+            if (expanded) {
+                p.innerText = dd;
+                expanded = true;
+            } else {
+                p.innerText = `${dd.match(/.^{1,10}/)[0]}${dd.length > 10 ? "...":""}`;
+                expanded = false;
+            }
+        }
         el.appendChild(h3);
         el.appendChild(p);
         articles.appendChild(img);

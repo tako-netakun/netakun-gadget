@@ -13,6 +13,11 @@ $titlecolor: rgb(181, 239, 255);
 
 .title1{
     @include baseBox(2px);
+    transition: all 0.3s ease;
+}
+
+.title1:hover {
+    font-size: 1.8em;
 }
 
 .pd-0{
@@ -112,7 +117,7 @@ footer {
 
 .syoukai{
     box-shadow: 2px 2px 2px;
-    background-color: #e4dbb4;
+    background-color: #f5f0ff;
     border-radius: 15px;
     border-color: #000;
     margin: 3px;

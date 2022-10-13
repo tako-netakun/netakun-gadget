@@ -8,7 +8,7 @@
   padding: 15px 0;
 }
 
-.pd-0 {
+.title1 {
   padding: 0;
   background-color: #b1eeff;
   -webkit-transition: all 0.3s ease;
@@ -17,7 +17,7 @@
   transition: all  0.3s ease;
 }
 
-.pd-0:hover {
+.title1:hover {
     background-color #ffc9d7;
 }
 

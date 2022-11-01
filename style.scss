@@ -14,6 +14,9 @@ $titlecolor: rgb(181, 239, 255);
 .title1{
     @include baseBox(1px);
     transition: all 0.3s ease;
+    &:hover {
+        color:rgb(255, 122, 122)
+    }
 }
 
 .title1:hover {
@@ -24,6 +27,11 @@ $titlecolor: rgb(181, 239, 255);
     padding: 0;
 }
 
+.koukoku{
+    display: flex;
+    justify-content: center;
+}
+
 
 * {
     font-family: 'Kosugi Maru', sans-serif;
@@ -31,6 +39,12 @@ $titlecolor: rgb(181, 239, 255);
 
 body {
     background: /*linear-gradient(#e66465, #9198e5)*/url(xp.jpg);
+}
+
+.geh1{
+    max-width: 40%;
+    padding-left: 30%;
+    padding-right: 30%
 }
 
 .kizi{
@@ -46,6 +60,8 @@ body {
 .genre {
     text-align: center;
     font-size: 15px;
+    color: rgb(89, 0, 255);
+    background: /*linear-gradient(red,blue)*/ orange;
 }
 
 .yokonarabi {

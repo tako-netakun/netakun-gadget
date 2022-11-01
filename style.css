@@ -8,6 +8,9 @@
   padding: 15px 0;
   transition: all 0.3s ease;
 }
+.title1:hover {
+  color: rgb(255, 122, 122);
+}
 
 .title1:hover {
   font-size: 1.8em;
@@ -17,12 +20,23 @@
   padding: 0;
 }
 
+.koukoku {
+  display: flex;
+  justify-content: center;
+}
+
 * {
   font-family: "Kosugi Maru", sans-serif;
 }
 
 body {
   background: url(xp.jpg);
+}
+
+.geh1 {
+  max-width: 40%;
+  padding-left: 30%;
+  padding-right: 30%;
 }
 
 .kizi {
@@ -38,6 +52,8 @@ body {
 .genre {
   text-align: center;
   font-size: 15px;
+  color: rgb(89, 0, 255);
+  background: orange;
 }
 
 .yokonarabi {
